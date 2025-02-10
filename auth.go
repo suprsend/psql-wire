@@ -3,6 +3,7 @@ package wire
 import (
 	"context"
 	"errors"
+	"strings"
 
 	"github.com/suprsend/psql-wire/codes"
 	pgerror "github.com/suprsend/psql-wire/errors"
@@ -68,12 +69,17 @@ func ClearTextPassword(validate func(ctx context.Context, database, username, pa
 		}
 
 		ctx, valid, err := validate(ctx, params[ParamDatabase], params[ParamUsername], password)
-		if err != nil {
-			return ctx, err
-		}
+		error := err.Error()
 
 		if !valid {
-			return ctx, ErrorCode(writer, pgerror.WithCode(errors.New("invalid username/password"), codes.InvalidPassword))
+			if strings.HasPrefix(error, "database not available") {
+				return ctx, ErrorCode(writer, pgerror.WithCode(errors.New("invalid database"), codes.InvalidDatabaseDefinition))
+			} else {
+				return ctx, ErrorCode(writer, pgerror.WithCode(errors.New("invalid username/password"), codes.InvalidPassword))
+			}
+		}
+		if err != nil {
+			return ctx, err
 		}
 
 		return ctx, writeAuthType(writer, authOK)
