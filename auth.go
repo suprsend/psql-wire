@@ -69,7 +69,10 @@ func ClearTextPassword(validate func(ctx context.Context, database, username, pa
 		}
 
 		ctx, valid, err := validate(ctx, params[ParamDatabase], params[ParamUsername], password)
-		error := err.Error()
+		error := ""
+		if err != nil {
+			error = err.Error()
+		}
 
 		if !valid {
 			if strings.HasPrefix(error, "database not available") {
