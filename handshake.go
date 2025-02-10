@@ -8,8 +8,8 @@ import (
 	"maps"
 	"net"
 
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
-	"github.com/jeroenrinzema/psql-wire/pkg/types"
+	"github.com/suprsend/psql-wire/pkg/buffer"
+	"github.com/suprsend/psql-wire/pkg/types"
 )
 
 // Handshake performs the connection handshake and returns the connection

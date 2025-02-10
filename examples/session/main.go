@@ -6,7 +6,7 @@ import (
 	"log"
 	"sync"
 
-	wire "github.com/jeroenrinzema/psql-wire"
+	wire "github.com/suprsend/psql-wire"
 )
 
 func main() {
@@ -21,9 +21,11 @@ func main() {
 
 type key int
 
-var mu sync.Mutex
-var id = key(1)
-var counter = 0
+var (
+	mu      sync.Mutex
+	id      = key(1)
+	counter = 0
+)
 
 func session(ctx context.Context) (context.Context, error) {
 	mu.Lock()

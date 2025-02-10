@@ -1,9 +1,9 @@
 package wire
 
 import (
-	psqlerr "github.com/jeroenrinzema/psql-wire/errors"
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
-	"github.com/jeroenrinzema/psql-wire/pkg/types"
+	psqlerr "github.com/suprsend/psql-wire/errors"
+	"github.com/suprsend/psql-wire/pkg/buffer"
+	"github.com/suprsend/psql-wire/pkg/types"
 )
 
 // errFieldType represents the error fields.

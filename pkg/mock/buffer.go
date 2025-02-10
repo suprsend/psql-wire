@@ -4,9 +4,9 @@ import (
 	"io"
 	"testing"
 
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
-	"github.com/jeroenrinzema/psql-wire/pkg/types"
 	"github.com/neilotoole/slogt"
+	"github.com/suprsend/psql-wire/pkg/buffer"
+	"github.com/suprsend/psql-wire/pkg/types"
 )
 
 // NewWriter constructs a new PostgreSQL wire protocol writer.

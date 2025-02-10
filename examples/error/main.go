@@ -5,9 +5,9 @@ import (
 	"errors"
 	"log"
 
-	wire "github.com/jeroenrinzema/psql-wire"
-	"github.com/jeroenrinzema/psql-wire/codes"
-	psqlerr "github.com/jeroenrinzema/psql-wire/errors"
+	wire "github.com/suprsend/psql-wire"
+	"github.com/suprsend/psql-wire/codes"
+	psqlerr "github.com/suprsend/psql-wire/errors"
 )
 
 func main() {

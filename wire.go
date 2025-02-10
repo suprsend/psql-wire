@@ -11,8 +11,8 @@ import (
 	"sync/atomic"
 
 	"github.com/jackc/pgx/v5/pgtype"
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
-	"github.com/jeroenrinzema/psql-wire/pkg/types"
+	"github.com/suprsend/psql-wire/pkg/buffer"
+	"github.com/suprsend/psql-wire/pkg/types"
 )
 
 // ListenAndServe opens a new Postgres server using the given address and

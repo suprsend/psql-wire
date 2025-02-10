@@ -7,10 +7,10 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
-	"github.com/jeroenrinzema/psql-wire/pkg/types"
 	"github.com/neilotoole/slogt"
 	"github.com/stretchr/testify/require"
+	"github.com/suprsend/psql-wire/pkg/buffer"
+	"github.com/suprsend/psql-wire/pkg/types"
 )
 
 func TestDefaultHandleAuth(t *testing.T) {

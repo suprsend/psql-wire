@@ -6,8 +6,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/jeroenrinzema/psql-wire/pkg/types"
 	"github.com/neilotoole/slogt"
+	"github.com/suprsend/psql-wire/pkg/types"
 )
 
 func TestNewWriterNil(t *testing.T) {

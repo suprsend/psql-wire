@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
 	"github.com/lib/pq/oid"
+	"github.com/suprsend/psql-wire/pkg/buffer"
 )
 
 type Statement struct {

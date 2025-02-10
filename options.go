@@ -8,8 +8,8 @@ import (
 	"strconv"
 
 	"github.com/jackc/pgx/v5/pgtype"
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
 	"github.com/lib/pq/oid"
+	"github.com/suprsend/psql-wire/pkg/buffer"
 )
 
 // ParseFn parses the given query and returns a prepared statement which could

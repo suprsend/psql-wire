@@ -9,8 +9,8 @@ import (
 	"math"
 
 	"github.com/jackc/pgx/v5/pgtype"
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
-	"github.com/jeroenrinzema/psql-wire/pkg/types"
+	"github.com/suprsend/psql-wire/pkg/buffer"
+	"github.com/suprsend/psql-wire/pkg/types"
 )
 
 // CopySignature is the signature that is used to identify the start of a copy-in

@@ -9,11 +9,11 @@ import (
 	"net"
 	"strings"
 
-	"github.com/jeroenrinzema/psql-wire/codes"
-	psqlerr "github.com/jeroenrinzema/psql-wire/errors"
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
-	"github.com/jeroenrinzema/psql-wire/pkg/types"
 	"github.com/lib/pq/oid"
+	"github.com/suprsend/psql-wire/codes"
+	psqlerr "github.com/suprsend/psql-wire/errors"
+	"github.com/suprsend/psql-wire/pkg/buffer"
+	"github.com/suprsend/psql-wire/pkg/types"
 )
 
 // NewErrUnimplementedMessageType is called whenever an unimplemented message

@@ -6,8 +6,8 @@ import (
 	"io"
 	"log"
 
-	wire "github.com/jeroenrinzema/psql-wire"
 	"github.com/lib/pq/oid"
+	wire "github.com/suprsend/psql-wire"
 )
 
 func main() {

@@ -7,13 +7,13 @@ import (
 	"testing"
 
 	"github.com/jackc/pgx/v5"
-	"github.com/jeroenrinzema/psql-wire/pkg/buffer"
-	"github.com/jeroenrinzema/psql-wire/pkg/mock"
-	"github.com/jeroenrinzema/psql-wire/pkg/types"
 	"github.com/lib/pq/oid"
 	"github.com/neilotoole/slogt"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/suprsend/psql-wire/pkg/buffer"
+	"github.com/suprsend/psql-wire/pkg/mock"
+	"github.com/suprsend/psql-wire/pkg/types"
 )
 
 func TestMessageSizeExceeded(t *testing.T) {
@@ -129,5 +129,4 @@ func TestBindMessageParameters(t *testing.T) {
 			t.Fatal(err)
 		}
 	})
-
 }

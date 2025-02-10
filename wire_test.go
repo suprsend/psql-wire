@@ -10,12 +10,12 @@ import (
 
 	"github.com/jackc/pgx/v5"
 	_ "github.com/jackc/pgx/v5/stdlib"
-	"github.com/jeroenrinzema/psql-wire/pkg/mock"
 	"github.com/lib/pq"
 	"github.com/lib/pq/oid"
 	"github.com/neilotoole/slogt"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"github.com/suprsend/psql-wire/pkg/mock"
 )
 
 // TListenAndServe will open a new TCP listener on a unallocated port inside

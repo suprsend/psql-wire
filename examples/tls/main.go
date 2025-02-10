@@ -3,10 +3,9 @@ package main
 import (
 	"context"
 	"crypto/tls"
-
 	"log/slog"
 
-	wire "github.com/jeroenrinzema/psql-wire"
+	wire "github.com/suprsend/psql-wire"
 )
 
 func main() {

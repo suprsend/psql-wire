@@ -8,10 +8,10 @@ import (
 	"testing"
 
 	"github.com/jackc/pgx/v5"
-	"github.com/jeroenrinzema/psql-wire/codes"
-	psqlerr "github.com/jeroenrinzema/psql-wire/errors"
 	"github.com/neilotoole/slogt"
 	"github.com/stretchr/testify/assert"
+	"github.com/suprsend/psql-wire/codes"
+	psqlerr "github.com/suprsend/psql-wire/errors"
 )
 
 func TestErrorCode(t *testing.T) {
